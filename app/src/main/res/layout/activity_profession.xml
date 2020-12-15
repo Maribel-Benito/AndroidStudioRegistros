@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,27 +8,15 @@
     android:padding="10dp"
     tools:context=".ActivityProfession">
 
-    <EditText
-        android:id="@+id/etId"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginStart="30dp"
-        android:inputType="textCapWords"
-        android:hint="ID"
-        android:padding="5dp"
-        />
 
     <EditText
         android:id="@+id/etName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginStart="30dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
         android:inputType="textCapWords"
-        android:layout_below="@id/etId"
         android:hint="Nombre"
         android:padding="5dp"
         />
@@ -37,9 +25,9 @@
         android:id="@+id/etBirthday"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginStart="30dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
         android:inputType="textCapWords"
         android:layout_below="@id/etName"
         android:hint="Fecha de Nacimiento"
@@ -50,9 +38,9 @@
         android:id="@+id/etGender"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginStart="30dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
         android:inputType="textCapWords"
         android:layout_below="@id/etBirthday"
         android:hint="Genero"
@@ -63,9 +51,9 @@
         android:id="@+id/etAddress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginStart="30dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
         android:inputType="textCapWords"
         android:layout_below="@id/etGender"
         android:hint="Direccion"
@@ -76,9 +64,9 @@
         android:id="@+id/etConsultingoom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginStart="30dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
         android:inputType="textCapWords"
         android:layout_below="@id/etAddress"
         android:hint="Consultorio"
@@ -86,27 +74,27 @@
         />
 
     <EditText
-        android:id="@+id/etSecialty"
+        android:id="@+id/etSpecialty"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginStart="30dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
         android:inputType="textCapWords"
         android:layout_below="@id/etConsultingoom"
         android:hint="Especialidad"
-        android:padding="10dp"
+        android:padding="5dp"
         />
 
     <EditText
         android:id="@+id/etPhone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginStart="30dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
         android:inputType="textCapWords"
-        android:layout_below="@id/etSecialty"
+        android:layout_below="@id/etSpecialty"
         android:hint="Telefono"
         android:padding="5dp"
         />
@@ -115,23 +103,11 @@
         android:id="@+id/etProfessionalid"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginStart="30dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
         android:inputType="textCapWords"
         android:layout_below="@id/etPhone"
-        android:hint="Cedula Profesional"
-        android:padding="5dp"
-        />
-    <EditText
-        android:id="@+id/etRFC"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginStart="30dp"
-        android:inputType="textCapWords"
-        android:layout_below="@id/etProfessionalid"
         android:hint="Cedula Profesional"
         android:padding="5dp"
         />
@@ -140,9 +116,9 @@
         android:id="@+id/fabGuardar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="25dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_margin="25dp"
         android:src="@android:drawable/ic_menu_save" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -153,6 +129,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginRight="100dp"
         android:layout_marginBottom="25dp"
-        android:src="@android:drawable/ic_dialog_dialer" />
+        android:src="@drawable/ic_list" />
 
-</LinearLayout>
+
+</RelativeLayout>

@@ -2,22 +2,23 @@ package com.example.registros;
 
 public class UserModel {
 
-    String id, user, password, name, phone, mail, family, proceedings, status;
+    String id, user, password, phone, mail, family, proceedings, allergies, status;
 
-    public UserModel() {
 
-    }
-
-    public UserModel(String id, String user, String password, String name, String phone, String mail, String family, String proceedings, String status) {
+    public UserModel(String id, String user, String password, String phone, String mail, String family, String proceedings, String allergies,String status) {
         this.id = id;
         this.user = user;
         this.password = password;
-        this.name = name;
         this.phone = phone;
         this.mail = mail;
         this.family = family;
         this.proceedings = proceedings;
+        this.allergies = allergies;
         this.status = status;
+    }
+
+    public UserModel() {
+
     }
 
     public String getId() {
@@ -42,14 +43,6 @@ public class UserModel {
 
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public String getPhone() {
@@ -82,6 +75,14 @@ public class UserModel {
 
     public void setProceedings(String proceedings) {
         this.proceedings = proceedings;
+    }
+
+    public String getAllergies() {
+        return allergies;
+    }
+
+    public void setAllergies(String allergies) {
+        this.allergies = allergies;
     }
 
     public String getStatus() {

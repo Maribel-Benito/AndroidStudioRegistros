@@ -1,21 +1,21 @@
 package com.example.registros;
 
 public class ProfessionModel {
-     String id, name, birthdate, gender, address, consultingoom, secialty, phone, professionalid, rfc;
+     String id, name, birthday, gender, address, consultingoom, specialty, phone, professionalid, rfc;
 
     public ProfessionModel() {
 
     }
 
-    public ProfessionModel(String id, String name, String birthdate, String gender, String address, String consultingoom, String secialty, String phone, String professionalid, String rfc) {
+    public ProfessionModel(String id, String name, String birthday, String gender, String address, String consultingoom, String specialty, String phone, String professionalid, String rfc) {
 
         this.id = id;
         this.name = name;
-        this.birthdate = birthdate;
+        this.birthday = birthday;
         this.gender = gender;
         this.address = address;
         this.consultingoom = consultingoom;
-        this.secialty = secialty;
+        this.specialty = specialty;
         this.phone = phone;
         this.professionalid = professionalid;
         this.rfc = rfc;
@@ -37,12 +37,12 @@ public class ProfessionModel {
         this.name = name;
     }
 
-    public String getBirthdate() {
-        return birthdate;
+    public String getBirthday() {
+        return birthday;
     }
 
-    public void setBirthdate(String birthdate) {
-        this.birthdate = birthdate;
+    public void setBirthday(String birthday) {
+        this.birthday = birthday;
     }
 
     public String getGender() {
@@ -69,12 +69,12 @@ public class ProfessionModel {
         this.consultingoom = consultingoom;
     }
 
-    public String getSecialty() {
-        return secialty;
+    public String getSpecialty() {
+        return specialty;
     }
 
     public void setSecialty(String secialty) {
-        this.secialty = secialty;
+        this.specialty = secialty;
     }
 
     public String getPhone() {
